@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "1b4f007d-9c7f-4a13-9931-e399de1c01a3",
+		"name": "Trello Çağrıları",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23019594"
+	},
+	"item": [
+		{
+			"name": "Pano Oluşturma",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=trellocagrilari&key=1b0995cb162af82152b371a10d345e11&token=9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "trellocagrilari"
+						},
+						{
+							"key": "key",
+							"value": "1b0995cb162af82152b371a10d345e11"
+						},
+						{
+							"key": "token",
+							"value": "9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste Oluşturma",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=testasamasi&idBoard=631496b664d48f03f9095eec&key=1b0995cb162af82152b371a10d345e11&token=9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "testasamasi"
+						},
+						{
+							"key": "idBoard",
+							"value": "631496b664d48f03f9095eec"
+						},
+						{
+							"key": "key",
+							"value": "1b0995cb162af82152b371a10d345e11"
+						},
+						{
+							"key": "token",
+							"value": "9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Oluşturma",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=63149c13713e6f0070fbcfa3&key=1b0995cb162af82152b371a10d345e11&token=9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "63149c13713e6f0070fbcfa3"
+						},
+						{
+							"key": "key",
+							"value": "1b0995cb162af82152b371a10d345e11"
+						},
+						{
+							"key": "token",
+							"value": "9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Silme",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/:id?key=1b0995cb162af82152b371a10d345e11&token=9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						":id"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1b0995cb162af82152b371a10d345e11"
+						},
+						{
+							"key": "token",
+							"value": "9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "63149c8657cc03046c91fe0a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Güncelleme ve Güncelleme Testi",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/:id?key=1b0995cb162af82152b371a10d345e11&token=9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b&name=guncel",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						":id"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "1b0995cb162af82152b371a10d345e11"
+						},
+						{
+							"key": "token",
+							"value": "9e6a150567390e5271c7fd6a4fb311e246578dc4e101ec01add7620a0d38a25b"
+						},
+						{
+							"key": "name",
+							"value": "guncel"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "63149ea89293e300841911a0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
